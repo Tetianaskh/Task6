@@ -7,9 +7,7 @@ public class Main {
     // Основные задачи:
 
     public static void removingArrayElement (String[] Array, int index) {
-        for () {
 
-        }
     }
 
     /**
