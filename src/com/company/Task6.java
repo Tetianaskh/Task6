@@ -2,7 +2,7 @@ package com.company;
 
 import java.sql.Array;
 
-public class Main {
+public class Task6 {
 
     // Основные задачи:
 
