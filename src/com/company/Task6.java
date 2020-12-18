@@ -36,8 +36,12 @@ public class Task6 {
         System.out.println("Исходный массив: " + s);
         System.out.println("Введите, пожалуйста, индекс удаляемого элемента");
         int index = sc.nextInt();
-        String s2 = Arrays.toString(removingArrayElement(array, index));
-        System.out.println("Новый массив: " + s2);
+        if (index > array.length - 1) {
+            System.out.println("Такого индекса в исходном массиве нет! Попробуйте еще раз :)");
+        } else {
+            String s2 = Arrays.toString(removingArrayElement(array, index));
+            System.out.println("Новый массив: " + s2);
+        }
     }
 
 //  public static int plusArray (int[] array, int[] array2) {
