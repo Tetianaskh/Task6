@@ -31,16 +31,12 @@ public class Task6 {
     public static void exercise01() {
         System.out.println("Добрый день!");
         Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
         int[] array = new int[] {5, 7, 9, 4, 2, 6, 1, 3, 8};
-=======
-        int[] array = new int[]{5, 7, 9, 4, 2, 6, 1, 3, 8};
->>>>>>> origin/master
         String s = Arrays.toString(array);
         System.out.println("Исходный массив: " + s);
         System.out.println("Введите, пожалуйста, индекс удаляемого элемента");
         int index = sc.nextInt();
-        if (index > array.length - 1) {
+        if (index > array.length - 1 || index < 0) {
             System.out.println("Такого индекса в исходном массиве нет! Попробуйте еще раз :)");
         } else {
             String s2 = Arrays.toString(removingArrayElement(array, index));
@@ -48,7 +44,6 @@ public class Task6 {
         }
     }
 
-<<<<<<< HEAD
     /**
      * Склейка двух массивов
      * @param array1 массив 1
@@ -82,23 +77,7 @@ public class Task6 {
     }
 
     public static void main(String[] args) {
-        exercise02();
-=======
-//  public static int plusArray (int[] array, int[] array2) {
-//        for (int i = 0; i < array.length + array2.length; i++) {
-//
-//        }
-//  }
-
-    /**
-     * Задача 2. Склейки двух массивов
-     */
-    public static void exercise02() {
-
-    }
-
-    public static void main(String[] args) {
         exercise01();
->>>>>>> origin/master
     }
+
 }
