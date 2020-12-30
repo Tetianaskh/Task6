@@ -50,12 +50,11 @@ public class Task6 {
      * @param array2 массив 2
      * @return новый склеенный массив
      */
-    public static int[] gluingArrays (int[] array1, int[] array2) {
+    public static int[] gluArrays (int[] array1, int[] array2) {
         int[] gluedArray = new int[array1.length + array2.length];
         int step = 0;
         for (int i = 0; i < array1.length; i++) {
-            gluedArray[i] = array1[i];
-            step++;
+            gluedArray[step++] = array1[i];
         }
         for (int i = 0; i < array2.length; i++) {
             gluedArray[step++] = array2[i];
@@ -70,12 +69,12 @@ public class Task6 {
         System.out.println("Добрый день!");
         int[] array1 = new int[] {3, 7, 1, 9, 0, 6};
         int[] array2 = new int[] {5, 2, 4, 8};
-        String s = Arrays.toString(array1);
-        String s1 = Arrays.toString(array2);
-        System.out.println("Исходный массив 1: " + s);
-        System.out.println("Исходный массив 2: " + s1);
-        String s2 = Arrays.toString(gluingArrays(array1, array2));
-        System.out.println("Склеенный массив: " + s2);
+        String arr1 = Arrays.toString(array1);
+        String arr2 = Arrays.toString(array2);
+        System.out.println("Исходный массив 1: " + arr1);
+        System.out.println("Исходный массив 2: " + arr2);
+        String result = Arrays.toString(gluArrays(array1, array2));
+        System.out.println("Склеенный массив: " + result);
     }
 
     public static void main(String[] args) {
