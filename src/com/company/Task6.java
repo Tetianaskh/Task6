@@ -32,8 +32,7 @@ public class Task6 {
         System.out.println("Добрый день!");
         Scanner sc = new Scanner(System.in);
         int[] array = new int[] {5, 7, 9, 4, 2, 6, 1, 3, 8};
-        String arr = Arrays.toString(array);
-        System.out.println("Исходный массив: " + arr);
+        System.out.println("Исходный массив: " + Arrays.toString(array));
         System.out.println("Введите, пожалуйста, индекс удаляемого элемента");
         int index = sc.nextInt();
         if (index > array.length - 1 || index < 0) {
@@ -69,10 +68,8 @@ public class Task6 {
         System.out.println("Добрый день!");
         int[] array1 = new int[] {3, 7, 1, 9, 0, 6};
         int[] array2 = new int[] {5, 2, 4, 8};
-        String arr1 = Arrays.toString(array1);
-        String arr2 = Arrays.toString(array2);
-        System.out.println("Исходный массив 1: " + arr1);
-        System.out.println("Исходный массив 2: " + arr2);
+        System.out.println("Исходный массив 1: " + Arrays.toString(array1));
+        System.out.println("Исходный массив 2: " + Arrays.toString(array2));
         int[] result = glueArrays(array1, array2);
         System.out.println("Склеенный массив: " + Arrays.toString(result));
     }
