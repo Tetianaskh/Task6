@@ -50,7 +50,7 @@ public class Task6 {
      * @param array2 массив 2
      * @return новый склеенный массив
      */
-    public static int[] gluArrays (int[] array1, int[] array2) {
+    public static int[] glueArrays(int[] array1, int[] array2) {
         int[] gluedArray = new int[array1.length + array2.length];
         int step = 0;
         for (int i = 0; i < array1.length; i++) {
@@ -73,7 +73,7 @@ public class Task6 {
         String arr2 = Arrays.toString(array2);
         System.out.println("Исходный массив 1: " + arr1);
         System.out.println("Исходный массив 2: " + arr2);
-        String result = Arrays.toString(gluArrays(array1, array2));
+        String result = Arrays.toString(glueArrays(array1, array2));
         System.out.println("Склеенный массив: " + result);
     }
 
