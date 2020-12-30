@@ -39,8 +39,8 @@ public class Task6 {
         if (index > array.length - 1 || index < 0) {
             System.out.println("Такого индекса в исходном массиве нет! Попробуйте еще раз :)");
         } else {
-            String result = Arrays.toString(removeArrayElement(array, index));
-            System.out.println("Новый массив: " + result);
+            int[] result = removeArrayElement(array, index);
+            System.out.println("Новый массив: " + Arrays.toString(result));
         }
     }
 
@@ -73,8 +73,8 @@ public class Task6 {
         String arr2 = Arrays.toString(array2);
         System.out.println("Исходный массив 1: " + arr1);
         System.out.println("Исходный массив 2: " + arr2);
-        String result = Arrays.toString(glueArrays(array1, array2));
-        System.out.println("Склеенный массив: " + result);
+        int[] result = glueArrays(array1, array2);
+        System.out.println("Склеенный массив: " + Arrays.toString(result));
     }
 
     public static void main(String[] args) {
