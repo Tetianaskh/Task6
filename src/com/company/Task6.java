@@ -13,7 +13,7 @@ public class Task6 {
      * @param index индекс удаляемого элемента
      * @return новый массив
      */
-    public static int[] removingArrayElement(int[] array, int index) {
+    public static int[] removeArrayElement(int[] array, int index) {
         int[] array2 = new int[array.length - 1];
         for (int i = 0; i < array2.length; i++) {
             if (i < index) {
@@ -32,15 +32,15 @@ public class Task6 {
         System.out.println("Добрый день!");
         Scanner sc = new Scanner(System.in);
         int[] array = new int[] {5, 7, 9, 4, 2, 6, 1, 3, 8};
-        String s = Arrays.toString(array);
-        System.out.println("Исходный массив: " + s);
+        String arr = Arrays.toString(array);
+        System.out.println("Исходный массив: " + arr);
         System.out.println("Введите, пожалуйста, индекс удаляемого элемента");
         int index = sc.nextInt();
         if (index > array.length - 1 || index < 0) {
             System.out.println("Такого индекса в исходном массиве нет! Попробуйте еще раз :)");
         } else {
-            String s2 = Arrays.toString(removingArrayElement(array, index));
-            System.out.println("Новый массив: " + s2);
+            String result = Arrays.toString(removeArrayElement(array, index));
+            System.out.println("Новый массив: " + result);
         }
     }
 
