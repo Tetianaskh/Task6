@@ -53,12 +53,12 @@ public class Task6 {
     public static int[] gluingArrays (int[] array1, int[] array2) {
         int[] gluedArray = new int[array1.length + array2.length];
         int step = 0;
-        for (int i1 = 0; i1 < array1.length; i1++) {
-            gluedArray[i1] = array1[i1];
+        for (int i = 0; i < array1.length; i++) {
+            gluedArray[i] = array1[i];
             step++;
         }
-        for (int i2 = 0; i2 < array2.length; i2++) {
-            gluedArray[step++] = array2[i2];
+        for (int i = 0; i < array2.length; i++) {
+            gluedArray[step++] = array2[i];
         }
         return gluedArray;
     }
@@ -79,6 +79,7 @@ public class Task6 {
     }
 
     public static void main(String[] args) {
+        exercise01();
         exercise02();
     }
 
